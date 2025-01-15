@@ -31,7 +31,6 @@ try {
   console.log(err);
 }
 
-app.use(express.static(__dirname + "/public"));
 app.use(cors());
 app.use(express.json());
 
