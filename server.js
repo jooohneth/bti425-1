@@ -1,3 +1,17 @@
+/********************************************************************************
+ * BTI425 – Assignment 1
+ *
+ * I declare that this assignment is my own work in accordance with Seneca's
+ * Academic Integrity Policy:
+ *
+ * https://www.senecapolytechnic.ca/about/policies/academic-integrity-policy.html
+ *
+ * Name: THai Zyong Nguyen Student ID: 153467220 Date: Jan 15, 2025
+ *
+ * Published URL: ___________________________________________________________
+ *
+ ********************************************************************************/
+
 import "dotenv/config";
 import express from "express";
 import cors from "cors";
@@ -17,6 +31,7 @@ try {
   console.log(err);
 }
 
+app.use(express.static(__dirname + "/public"));
 app.use(cors());
 app.use(express.json());
 
